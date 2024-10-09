@@ -1,5 +1,5 @@
 // PACOTES
-package empresa;
+package model;
 
 // IMPORTAÇÕES
 import java.util.Scanner;

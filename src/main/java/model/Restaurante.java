@@ -1,5 +1,5 @@
 // PACOTES
-package empresa;
+package model;
 
 public class Restaurante extends Empresa {
 

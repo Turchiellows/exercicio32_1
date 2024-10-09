@@ -2,7 +2,7 @@
 package principal;
 
 // IMPORTAÇÕES
-import empresa.Restaurante;
+import model.Restaurante;
 
 public class Principal {
 
