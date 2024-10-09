@@ -1,22 +1,21 @@
-// PACKAGE
+// PACOTES
 package principal;
 
-// IMPORTS
-import empresa.Empresa;
+// IMPORTAÇÕES
 import empresa.Restaurante;
-import java.util.Scanner;
 
 public class Principal {
+
    public static void main(String[] args) {
-      // INSTANTIATE
-      Scanner sc = new Scanner(System.in);
+      // INSTANCIAR
       Restaurante meu = new Restaurante();
-      
+
+      // CADASTRAR
       meu.cadastrarComida();
-      
-      System.out.println("======================================================");
-      System.out.println("\n\n" + meu.mostrarRestaurante());
-      
-      
+
+      // EXIBIR
+      System.out.println("\n\n======================================================");
+      System.out.println(meu.mostrarRestaurante());
+
    }
 }

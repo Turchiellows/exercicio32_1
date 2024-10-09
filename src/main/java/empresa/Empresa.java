@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Empresa {
 
-   // ATTIBUTOS
+   // ATTIBUTOS ================================================================
    private String nome;
    private String rua;
    private String cidade;
@@ -14,7 +14,7 @@ public class Empresa {
    private String cep;
    private String fone;
 
-   // CONSTRUTORES
+   // CONSTRUTORES =============================================================
    public Empresa() {
       this("Empresa genérica", "Rua sem número", "Florianópolis", "SC", "00000-000", "(000)0-0000-0000");
    }
@@ -28,7 +28,7 @@ public class Empresa {
       this.fone = fone;
    }
 
-   // INSTANCIAR
+   // INSTANCIAR ===============================================================
    Scanner sc = new Scanner(System.in);
 
    // GETTER AND SETTER
@@ -85,27 +85,26 @@ public class Empresa {
    public void cadastrarEmpresa() {
       System.out.print("Informe o nome da empresa: ");
       setNome(sc.nextLine());
-      
+
       System.out.print("Informe a rua da empresa: ");
       setRua(sc.nextLine());
-      
+
       System.out.print("Informe a cidade da empresa: ");
       setCidade(sc.nextLine());
-      
+
       System.out.print("Informe o estado empresa: ");
       setEstado(sc.nextLine());
-      
+
       System.out.print("Informe o CEP da empresa: ");
       setCep(sc.nextLine());
-      
+
       System.out.print("Informe o telefone da empresa: ");
       setFone(sc.nextLine());
    }
 
-   
    // MOSTRAR A EMPRESA
    public String mostrarEmpresa() {
-      return "NOME     : " + getNome() + "\nENDEREÇO : " + getRua() + " " + getCidade() + " " + getEstado() + " " + getCep() + "\nTELEFONE : " + getFone();
+      return "NOME     : " + getNome() + "\nENDEREÇO : " + getRua() + ", " + getCidade() + ", " + getEstado() + ", " + getCep() + "\nTELEFONE : " + getFone();
    }
 
 }

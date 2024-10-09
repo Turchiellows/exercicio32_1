@@ -1,9 +1,6 @@
 // PACOTES
 package empresa;
 
-// IMPORTAÇÕES
-import java.util.Scanner;
-
 public class Restaurante extends Empresa {
 
    // ATTRIBUTOS ===============================================================
@@ -44,8 +41,11 @@ public class Restaurante extends Empresa {
    // METODOS ==================================================================
    // INSERIR DADOS
    public void cadastrarComida() {
+      // PREENCHENDO OS DADOS DA SUPER CLASSE
       super.cadastrarEmpresa();
 
+      
+      // NOTE - O OBJETO SCANNER VEM DA SUPER CLASSE
       System.out.print("Informe o nome da comida: ");
       setTipoComida(sc.nextLine());
 
